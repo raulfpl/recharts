@@ -541,8 +541,8 @@ const generateCategoricalChart = ({
       const pos = this.calculateTooltipPos(rangeData);
       const { orderedTooltipTicks: ticks, tooltipAxis: axis, tooltipTicks } = this.state;
 
-      if(!ticks) {
-        return null
+      if (!ticks) {
+        return null;
       }
 
       const activeIndex = calculateActiveTickIndex(pos, ticks, tooltipTicks, axis);
